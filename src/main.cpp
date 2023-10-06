@@ -1,26 +1,17 @@
 #include <Arduino.h>
 
+#define SERIAL_BAUD 9600
 
-//Coucou les djeuns 
-
-// put function declarations here:
-int myFunction(int, int);
-
-void setup() {
-  // put your setup code here, to run once:
-  int result = myFunction(2, 3);
+void setup()
+{
+  Serial.begin(SERIAL_BAUD);
   pinMode(LED_BUILTIN, OUTPUT);
 }
 
-void loop() {
-  // put your main code here, to run repeatedly:
+void loop()
+{
   digitalWrite(LED_BUILTIN, HIGH);
   delay(500);
   digitalWrite(LED_BUILTIN, LOW);
   delay(500);
-}
-
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
 }
