@@ -1,4 +1,7 @@
+// ServoManager.cpp
+
 #include "ServoManager.h"
+#include "../Servo-1.2.1/src/Servo.h"
 
 ServoManager::ServoManager()
 {
